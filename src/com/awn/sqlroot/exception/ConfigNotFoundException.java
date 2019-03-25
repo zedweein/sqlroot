@@ -1,6 +1,6 @@
 package com.awn.sqlroot.exception;
 
-public class ConfigNotFoundException extends RuntimeException{
+public class ConfigNotFoundException extends RuntimeException{ 
 
 	private static final long serialVersionUID = 1L;
 	
