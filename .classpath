@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="commons-io-2.2.jar" sourcepath="/Users/mac/Apache/apache-maven-3.5.0/Repository/commons-io/commons-io/2.2/commons-io-2.2-sources.jar"/>
+	<classpathentry kind="lib" path="log4j-1.2.13.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
