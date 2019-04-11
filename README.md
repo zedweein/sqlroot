@@ -1,22 +1,22 @@
-sqlroot  
+#sqlroot  
 
-简介  
-轻量级sql配置化实现  
+##简介  
+###轻量级sql配置化实现  
 
-集成  
-采用sql xml配置化解决代码集成sql语句的问题,采用底层原生开发,无依赖第三方api  
-1.将sqlroot.properties放入classpath路径  
-mapper.location=/resource/mapper/ mapper映射文件位置,不限制命名  
-mapper.logger=true 是否打印sql语句,调试时候建议打开,会打印出执行的完整sql语句   
-2.将sqlroot-1.0.jar加入build path  
-3.代码中使用,可在父类或者接口中申明或者继承  
-private SQLRoot mapper = SQLRoot.instance();  
+##集成  
+采用sql xml配置化解决代码集成sql语句的问题,采用底层原生开发,无依赖第三方api<br/>  
+1.将sqlroot.properties放入classpath路径<br/>  
+mapper.location=/resource/mapper/ mapper映射文件位置,不限制命名<br/>  
+mapper.logger=true 是否打印sql语句,调试时候建议打开,会打印出执行的完整sql语句<br/>   
+2.将sqlroot-1.0.jar加入build path<br/>  
+3.代码中使用,可在父类或者接口中申明或者继承<br/>  
+private SQLRoot mapper = SQLRoot.instance();<br/>  
 
-异常  
-com.awn.sqlroot.exception.ConfigNotFoundException 配置未找到  
-com.awn.sqlroot.exception.MultiDefinedException SQLKEY重复定义  
-com.awn.sqlroot.exception.SqlNotFoundException 未找到需要查询的SQL  
-com.awn.sqlroot.exception.XmlNotFoundException mapper中未找到xml文件  
+异常<br/>
+com.awn.sqlroot.exception.ConfigNotFoundException 配置未找到<br/>  
+com.awn.sqlroot.exception.MultiDefinedException SQLKEY重复定义<br/>  
+com.awn.sqlroot.exception.SqlNotFoundException 未找到需要查询的SQL<br/>  
+com.awn.sqlroot.exception.XmlNotFoundException mapper中未找到xml文件<br/>  
 
 方法  
 String sql(String sqlKey);  
